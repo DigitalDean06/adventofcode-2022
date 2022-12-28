@@ -4,7 +4,7 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "start": "node day-03.js"
+    "start": "node day-04.js"
   },
   "keywords": [],
   "author": "",

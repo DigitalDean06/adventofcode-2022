@@ -7,6 +7,7 @@ fs.readFile("./assets/day-03.txt", "utf8", (err, data) => {
   {
     let sum = 0;
     for (const line of data.split("\r\n")) {
+      if (!line) continue;
       const first = line.slice(0, line.length / 2);
       const second = line.slice(line.length / 2, line.length);
       let common;
@@ -29,6 +30,7 @@ fs.readFile("./assets/day-03.txt", "utf8", (err, data) => {
     let sum = 0;
     let buffer = [];
     for (const line of data.split("\r\n")) {
+      if (!line) continue;
       buffer.push(line);
       if (buffer.length === 3) {
         let common;

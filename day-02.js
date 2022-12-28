@@ -11,6 +11,7 @@ fs.readFile("./assets/day-02.txt", "utf8", (err, data) => {
       .replaceAll("Z", "C");
     let sum = 0;
     for (const line of replacedData.split("\r\n")) {
+      if (!line) continue;
       const args = line.split(" ");
       const char = "A".charCodeAt(0);
       const char1 = args[0].charCodeAt(0) - char;
@@ -25,6 +26,7 @@ fs.readFile("./assets/day-02.txt", "utf8", (err, data) => {
   {
     let sum = 0;
     for (const line of data.split("\r\n")) {
+      if (!line) continue;
       const args = line.split(" ");
       const char = "A".charCodeAt(0);
       const char1 = args[0].charCodeAt(0) - char;
